@@ -1,0 +1,304 @@
+[
+    {
+        "product_id": "LAP001",
+        "product_title": "Dell XPS 13",
+        "product_image": "https://i.ibb.co.com/Dkwrr5C/93003-51db9314-18f6-4d5d-a397-79e7735859df.jpg",
+        "category": "Laptops",
+        "price": 1299.99,
+        "description": "A powerful ultrabook with sleek design and high performance.",
+        "Specifications": [
+            "Intel i7 processor",
+            "16GB RAM",
+            "512GB SSD",
+            "13.3-inch display"
+        ],
+        "availability": true,
+        "rating": 4.7,
+        "warranty": "2 years"
+    },
+    {
+        "product_id": "LAP002",
+        "product_title": "Asus ROG Zephyrus G14",
+        "product_image": "https://i.ibb.co.com/kBc70Q5/DZ00110641-1.jpg",
+        "category": "Laptops",
+        "price": 1599.99,
+        "description": "High-performance gaming laptop with advanced cooling.",
+        "Specifications": [
+            "AMD Ryzen 9 processor",
+            "32GB RAM",
+            "1TB SSD",
+            "14-inch 144Hz display"
+        ],
+        "availability": false,
+        "rating": 4.8,
+        "warranty": "2 years"
+    },
+    {
+        "product_id": "PHN001",
+        "product_title": "Apple iPhone 14",
+        "product_image": "https://i.ibb.co.com/0c5kcyh/APPLE-IPHONE-14-PRO-MAX-128-GB-GOLD-SMARTPHONE.jpg",
+        "category": "Phones",
+        "price": 999.99,
+        "description": "The latest smartphone with an advanced camera system.",
+        "Specifications": [
+            "A16 Bionic chip",
+            "6GB RAM",
+            "128GB storage",
+            "5G capable"
+        ],
+        "availability": true,
+        "rating": 4.5,
+        "warranty": "1 year"
+    },
+    {
+        "product_id": "PHN002",
+        "product_title": "Samsung Galaxy S23",
+        "product_image": "https://i.ibb.co.com/Lp0zDj1/61-RZDb2m-Qx-L-SL1500.jpg",
+        "category": "Phones",
+        "price": 799.99,
+        "description": "Feature-rich smartphone with stunning display and camera.",
+        "Specifications": [
+            "Snapdragon 8 Gen 2",
+            "8GB RAM",
+            "256GB storage",
+            "5G capable"
+        ],
+        "availability": false,
+        "rating": 4.6,
+        "warranty": "1 year"
+    },
+    {
+        "product_id": "ACC001",
+        "product_title": "Anker Wireless Charger",
+        "product_image": "https://i.ibb.co.com/Mp5j0zF/716c7uh-OC-L-AC-SL1500.jpg",
+        "category": "Accessories",
+        "price": 29.99,
+        "description": "Fast wireless charging pad compatible with all Qi-enabled devices.",
+        "Specifications": [
+            "10W fast charging",
+            "Non-slip design",
+            "LED indicator"
+        ],
+        "availability": true,
+        "rating": 4.3,
+        "warranty": "1 year"
+    },
+    {
+        "product_id": "ACC002",
+        "product_title": "Sony WH-1000XM4",
+        "product_image": "https://i.ibb.co.com/HT5mvG6/61-F2-An-H2l-FL-AC-SL1460.jpg",
+        "category": "Accessories",
+        "price": 349.99,
+        "description": "Over-ear Bluetooth headphones with noise cancellation.",
+        "Specifications": [
+            "30 hours battery life",
+            "Active noise cancellation",
+            "Built-in microphone"
+        ],
+        "availability": true,
+        "rating": 4.6,
+        "warranty": "1 year"
+    },
+    {
+        "product_id": "SWT001",
+        "product_title": "Apple Watch Series 8",
+        "product_image": "https://i.ibb.co.com/R0qW7G5/ML763-VW-34-FRwatch-45-stainless-gold-cell-8s-VW-34-FR-WF-CO.jpg",
+        "category": "Smart Watches",
+        "price": 399.99,
+        "description": "A stylish smartwatch that tracks your fitness and health.",
+        "Specifications": [
+            "Heart rate monitor",
+            "GPS tracking",
+            "Water-resistant",
+            "Notifications"
+        ],
+        "availability": false,
+        "rating": 4.7,
+        "warranty": "1 year"
+    },
+    {
+        "product_id": "SWT002",
+        "product_title": "Samsung Galaxy Watch 5",
+        "product_image": "https://i.ibb.co.com/1fVDr5G/960x0.png",
+        "category": "Smart Watches",
+        "price": 279.99,
+        "description": "Fitness tracker with a sleek design and multiple sports modes.",
+        "Specifications": [
+            "Sleep tracking",
+            "Pedometer",
+            "Heart rate monitor",
+            "Water-resistant"
+        ],
+        "availability": true,
+        "rating": 4.5,
+        "warranty": "1 year"
+    },
+    {
+        "product_id": "LAP003",
+        "product_title": "Lenovo ThinkPad X1 Carbon",
+        "product_image": "https://i.ibb.co.com/HNBTfYm/lenovo-laptops-x1-carbon-6th-gen-hero.webp",
+        "category": "Laptops",
+        "price": 1399.99,
+        "description": "Designed for professionals with robust performance.",
+        "Specifications": [
+            "Intel i7 processor",
+            "16GB RAM",
+            "512GB SSD",
+            "14-inch display"
+        ],
+        "availability": true,
+        "rating": 4.6,
+        "warranty": "2 years"
+    },
+    {
+        "product_id": "PHN003",
+        "product_title": "Google Pixel 7",
+        "product_image": "https://i.ibb.co.com/CPNY0h2/Google-Pixel-7-price-in-bangladesh.jpg",
+        "category": "Phones",
+        "price": 599.99,
+        "description": "Smartphone with an exceptional camera and stock Android experience.",
+        "Specifications": [
+            "Google Tensor chip",
+            "8GB RAM",
+            "128GB storage",
+            "5G capable"
+        ],
+        "availability": false,
+        "rating": 4.7,
+        "warranty": "1 year"
+    },
+    {
+        "product_id": "ACC003",
+        "product_title": "RAVPower Portable Power Bank",
+        "product_image": "https://i.ibb.co.com/m8y3RNw/65-02000-587-V1-JPG-1.jpg",
+        "category": "Accessories",
+        "price": 39.99,
+        "description": "Compact power bank with fast charging capabilities.",
+        "Specifications": [
+            "10000mAh capacity",
+            "Dual USB ports",
+            "LED flashlight"
+        ],
+        "availability": true,
+        "rating": 4.4,
+        "warranty": "1 year"
+    },
+    {
+        "product_id": "SWT003",
+        "product_title": "Garmin Forerunner 245",
+        "product_image": "https://i.ibb.co.com/G3c0Ncp/x9-Um-Af5bqm-NYccon9b-Jng7-1200-80.jpg",
+        "category": "Smart Watches",
+        "price": 349.99,
+        "description": "Premium smartwatch for runners with advanced metrics.",
+        "Specifications": [
+            "GPS tracking",
+            "Heart rate monitor",
+            "Music storage",
+            "Long battery life"
+        ],
+        "availability": false,
+        "rating": 4.5,
+        "warranty": "1 year"
+    },
+    {
+        "product_id": "LAP004",
+        "product_title": "HP Spectre x360",
+        "product_image": "https://i.ibb.co.com/BcKrVvN/HP-Spectre-x360-2024-featured-image-packshot-review-Recovered-1.jpg",
+        "category": "Laptops",
+        "price": 1399.99,
+        "description": "Versatile 2-in-1 laptop with stunning display.",
+        "Specifications": [
+            "Intel i7 processor",
+            "16GB RAM",
+            "1TB SSD",
+            "13.3-inch touchscreen"
+        ],
+        "availability": true,
+        "rating": 4.6,
+        "warranty": "2 years"
+    },
+    {
+        "product_id": "PHN004",
+        "product_title": "OnePlus 11",
+        "product_image": "https://i.ibb.co.com/7J7fykz/oneplus-11-2.jpg",
+        "category": "Phones",
+        "price": 749.99,
+        "description": "Flagship smartphone with excellent performance and fast charging.",
+        "Specifications": [
+            "Snapdragon 8 Gen 2",
+            "8GB RAM",
+            "128GB storage",
+            "5G capable"
+        ],
+        "availability": false,
+        "rating": 4.4,
+        "warranty": "1 year"
+    },
+    {
+        "product_id": "ACC004",
+        "product_title": "HyperX Alloy FPS Pro Keyboard",
+        "product_image": "https://i.ibb.co.com/hmT0bgJ/761b0340b7a70f73db7042c8be950527.jpg",
+        "category": "Accessories",
+        "price": 79.99,
+        "description": "Compact mechanical gaming keyboard.",
+        "Specifications": [
+            "Cherry MX mechanical switches",
+            "Compact design",
+            "Red LED backlighting"
+        ],
+        "availability": true,
+        "rating": 4.5,
+        "warranty": "1 year"
+    },
+    {
+        "product_id": "LAP005",
+        "product_title": "Acer Swift 3",
+        "product_image": "https://i.ibb.co.com/LPL4BDY/images-q-tbn-ANd9-Gc-Tx29vex-A-Ycl-CNYItw-CN5fd-D3z-G0-Tfy28-Mg-s.jpg",
+        "category": "Laptops",
+        "price": 899.99,
+        "description": "Lightweight laptop with impressive performance and battery life.",
+        "Specifications": [
+            "Intel i5 processor",
+            "8GB RAM",
+            "256GB SSD",
+            "14-inch display"
+        ],
+        "availability": true,
+        "rating": 4.4,
+        "warranty": "1 year"
+    },
+    {
+        "product_id": "PHN005",
+        "product_title": "Xiaomi 13",
+        "product_image": "https://i.ibb.co.com/w44zkkr/deccanherald-import-sites-dh-files-articleimages-2022-12-12-xiaomi-13-cs-2-1171049-1670852707.jpg",
+        "category": "Phones",
+        "price": 699.99,
+        "description": "Smartphone with cutting-edge technology and design.",
+        "Specifications": [
+            "Snapdragon 8 Gen 2",
+            "12GB RAM",
+            "256GB storage",
+            "5G capable"
+        ],
+        "availability": false,
+        "rating": 4.5,
+        "warranty": "1 year"
+    },
+    {
+        "product_id": "LAP006",
+        "product_title": "Microsoft Surface Laptop 4",
+        "product_image": "https://i.ibb.co.com/TrQbkf7/image-0.jpg",
+        "category": "Laptops",
+        "price": 1299.99,
+        "description": "Stylish laptop with a high-resolution touchscreen.",
+        "Specifications": [
+            "Intel i5 processor",
+            "8GB RAM",
+            "512GB SSD",
+            "13.5-inch touchscreen"
+        ],
+        "availability": true,
+        "rating": 4.7,
+        "warranty": "2 years"
+    }
+]
