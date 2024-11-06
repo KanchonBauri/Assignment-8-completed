@@ -49,10 +49,10 @@ const NavBar = () => {
                 <NavLink to="/dashboard" className={({isActive})=>isActive? "text-primary": location.pathname==='/'? "text-white": "text-text2"}>Dashboard</NavLink>
             </div>
             <div className="flex justify-end items-center gap-2 sm:gap-4">
-                <Link className={"btn btn-circle btn-xs sm:btn-sm xl:btn-md bg-white sm:text-xl lg:text-2xl text-text2"}>
+                <Link className={"btn btn-circle border border-fullBg btn-xs sm:btn-sm xl:btn-md bg-white sm:text-xl lg:text-2xl text-text2"}>
                     <AiOutlineShoppingCart />
                 </Link>
-                <Link className={"btn btn-circle btn-xs sm:btn-sm xl:btn-md bg-white sm:text-xl lg:text-2xl text-text2"}>
+                <Link className={"btn btn-circle border border-fullBg btn-xs sm:btn-sm xl:btn-md bg-white sm:text-xl lg:text-2xl text-text2"}>
                     <CiHeart />
                 </Link>
             </div>

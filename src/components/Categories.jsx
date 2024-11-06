@@ -9,7 +9,7 @@ const Categories = ({categories}) => {
                 <button className={`w-full p-4 rounded-full outline-none ${location.pathname === '/' ? "text-white bg-primary font-bold" : "text-text2 bg-fullBg hover:text-white hover:bg-primary"}`}>All</button>
             </Link>
             {
-                categories.map(category => (
+                categories?.map(category => (
                     <Link key={category.category_name} to={`/${category.category_name}`}>
                         <button className={`w-full p-4 rounded-full outline-none ${location.pathname === `/${category.category_name}` ? "text-white bg-primary font-bold" : "text-text2 bg-fullBg hover:text-white hover:bg-primary"}`}>{category.category_name}</button>
                     </Link>
