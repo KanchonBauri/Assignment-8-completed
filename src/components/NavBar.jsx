@@ -5,7 +5,7 @@ import { CiHeart } from "react-icons/ci";
 
 const NavBar = () => {
     return (
-        <div className={`flex justify-between items-center w-10/12 mx-auto mt-8 sm:mt-12 ${location.pathname === '/' && "absolute top-0 inset-x-0 z-10"}`}>
+        <div className={`flex justify-between items-center w-11/12 sm:w-10/12 mx-auto mt-8 sm:mt-12 ${location.pathname === '/'||'/Laptops'||'/Phones'||'/Accessories'||'/Smart Watches'||'/Smart Tvs'? "absolute top-0 inset-x-0 z-10": ""}`}>
             <div className="flex items-center">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost sm:hidden">
@@ -29,13 +29,13 @@ const NavBar = () => {
                         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
                     >
                         <li>
-                            <NavLink to="/" className={({ isActive }) => isActive ? "text-red-600" : "text-text2"}>Home</NavLink>
+                            <NavLink to="/" className={({ isActive }) => isActive ? "text-white underline" : "text-text2"}>Home</NavLink>
                         </li>
                         <li>
-                            <NavLink to="/statistics" className={({ isActive }) => isActive ? "text-red-600" : "text-text2"}>Statistics</NavLink>
+                            <NavLink to="/statistics" className={({ isActive }) => isActive ? "text-primary" : location.pathname === '/' ? "text-white" : "text-text2"}>Statistics</NavLink>
                         </li>
                         <li>
-                            <NavLink to="/dashboard" className={({ isActive }) => isActive ? "text-red-600" : "text-text2"}>Dashboard</NavLink>
+                            <NavLink to="/dashboard" className={({ isActive }) => isActive ? "text-primary" : location.pathname === '/' ? "text-white" : "text-text2"}>Dashboard</NavLink>
                         </li>
                     </ul>
                 </div>

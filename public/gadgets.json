@@ -103,7 +103,7 @@
         "product_id": "SWT001",
         "product_title": "Apple Watch Series 8",
         "product_image": "https://i.ibb.co.com/R0qW7G5/ML763-VW-34-FRwatch-45-stainless-gold-cell-8s-VW-34-FR-WF-CO.jpg",
-        "category": "Smart Watches",
+        "category": "Smart-Watches",
         "price": 399.99,
         "description": "A stylish smartwatch that tracks your fitness and health.",
         "Specifications": [
@@ -120,7 +120,7 @@
         "product_id": "SWT002",
         "product_title": "Samsung Galaxy Watch 5",
         "product_image": "https://i.ibb.co.com/1fVDr5G/960x0.png",
-        "category": "Smart Watches",
+        "category": "Smart-Watches",
         "price": 279.99,
         "description": "Fitness tracker with a sleek design and multiple sports modes.",
         "Specifications": [
@@ -187,7 +187,7 @@
         "product_id": "SWT003",
         "product_title": "Garmin Forerunner 245",
         "product_image": "https://i.ibb.co.com/G3c0Ncp/x9-Um-Af5bqm-NYccon9b-Jng7-1200-80.jpg",
-        "category": "Smart Watches",
+        "category": "Smart-Watches",
         "price": 349.99,
         "description": "Premium smartwatch for runners with advanced metrics.",
         "Specifications": [
