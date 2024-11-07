@@ -46,6 +46,14 @@ const addToWishlist = (gadget) => {
 }
 
 // Remove a gadget from local storage
+const removeFromCart = (index) => {
+    const cart = getOldCart();
+    const remaining = cart?.filter(item => cart.indexOf(item) !== index);
+    localStorage.setItem('cart', JSON.stringify(remaining));
+    toast.warning('Item Removed from Cart', {
+        position: "top-center"
+    });
+}
 const removeFromWishlist = (id) => {
     const wishlist = getOldWishlist();
     const remaining = wishlist?.filter(item => item.product_id !== id);
@@ -58,4 +66,4 @@ const removeFromWishlist = (id) => {
 
 
 
-export { getOldCart, addToCart, getOldWishlist, addToWishlist, removeFromWishlist }
+export { getOldCart, addToCart, getOldWishlist, addToWishlist, removeFromCart, removeFromWishlist }

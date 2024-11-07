@@ -3,7 +3,7 @@ import { useLoaderData } from "react-router-dom";
 
 const WishlistContainer = () => {
 
-    const data = useLoaderData();
+    
 
     return (
         <div>

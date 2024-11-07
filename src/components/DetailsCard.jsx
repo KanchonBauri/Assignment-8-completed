@@ -13,7 +13,7 @@ const DetailsCard = ({ data }) => {
     const [gadget, setGadget] = useState({});
     const { product_image, product_title, price, description, Specifications, availability, rating, warranty} = gadget;
 
-    const [added, setAdded] = useState(true);
+    const [added, setAdded] = useState(null);
 
     useEffect(() => {
         const clickedGadget = data.find(product => product.product_id === id);
@@ -26,7 +26,6 @@ const DetailsCard = ({ data }) => {
         else {
             setAdded(false);
         }
-        console.log(added);
     }, [ data, id, added ])
 
     const handleAddToCart = (gadget) => {

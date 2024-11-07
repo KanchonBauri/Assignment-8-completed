@@ -42,18 +42,15 @@ const Routes = createBrowserRouter([
             children: [
               {
                 path: "/dashboard",
-                element: <CartContainer></CartContainer>,
-                loader: () => fetch('../gadgets.json')
+                element: <CartContainer></CartContainer>
               },
               {
                 path: "/dashboard/cart",
-                element: <CartContainer></CartContainer>,
-                loader: () => fetch('../gadgets.json')
+                element: <CartContainer></CartContainer>
               },
               {
                 path: "/dashboard/wishlist",
-                element: <WishlistContainer></WishlistContainer>,
-                loader: () => fetch('../gadgets.json')
+                element: <WishlistContainer></WishlistContainer>
               }
             ]
         },
