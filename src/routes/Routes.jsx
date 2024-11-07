@@ -5,6 +5,8 @@ import Dashboard from "../pages/Dashboard";
 import Statistics from "../pages/Statistics";
 import Gadgets from "../components/Gadgets";
 import ProductDetails from "../pages/ProductDetails";
+import CartContainer from "../components/CartContainer";
+import WishlistContainer from "../components/WishlistContainer";
 
 
 const Routes = createBrowserRouter([
@@ -37,6 +39,23 @@ const Routes = createBrowserRouter([
         {
             path: "/dashboard",
             element: <Dashboard></Dashboard>,
+            children: [
+              {
+                path: "/dashboard",
+                element: <CartContainer></CartContainer>,
+                loader: () => fetch('../gadgets.json')
+              },
+              {
+                path: "/dashboard/cart",
+                element: <CartContainer></CartContainer>,
+                loader: () => fetch('../gadgets.json')
+              },
+              {
+                path: "/dashboard/wishlist",
+                element: <WishlistContainer></WishlistContainer>,
+                loader: () => fetch('../gadgets.json')
+              }
+            ]
         },
         {
           path: "/gadget/:id",
