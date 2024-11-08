@@ -7,18 +7,19 @@ import Gadgets from "../components/Gadgets";
 import ProductDetails from "../pages/ProductDetails";
 import CartContainer from "../components/CartContainer";
 import WishlistContainer from "../components/WishlistContainer";
+import ErrorPage from "../pages/ErrorPage";
 
 
 const Routes = createBrowserRouter([
   {
     path: "/",
     element: <MainLayout></MainLayout>,
-    errorElement: <div>ERROR</div>,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
         {
             path: "/",
             element: <Home></Home>,
-            loader: () => fetch('./categories.json'),
+            loader: () => fetch('../categories.json'),
             children: [
               {
                 path: "/",
