@@ -13,7 +13,6 @@ const Dashboard = () => {
 
     return (
         <div>
-            <title>Dashboard | Gadget-Heaven</title>
             <div className="bg-primary pb-8">
                 <Heading title={'Dashboard'} subtitle={'Here you can see the items you have added to your Cart or as your favourite. Just click the Purchase button to complete your purchase. Happy Shopping!'}></Heading>
                 <div className="flex flex-col sm:flex-row justify-center items-center gap-6">
