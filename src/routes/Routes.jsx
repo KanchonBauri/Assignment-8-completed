@@ -8,6 +8,7 @@ import ProductDetails from "../pages/ProductDetails";
 import CartContainer from "../components/CartContainer";
 import WishlistContainer from "../components/WishlistContainer";
 import ErrorPage from "../pages/ErrorPage";
+import PCBuilder from "../pages/PCBuilder";
 
 
 const Routes = createBrowserRouter([
@@ -16,50 +17,54 @@ const Routes = createBrowserRouter([
     element: <MainLayout></MainLayout>,
     errorElement: <ErrorPage></ErrorPage>,
     children: [
-        {
+      {
+        path: "/",
+        element: <Home></Home>,
+        loader: () => fetch('../categories.json'),
+        children: [
+          {
             path: "/",
-            element: <Home></Home>,
-            loader: () => fetch('../categories.json'),
-            children: [
-              {
-                path: "/",
-                element: <Gadgets></Gadgets>,
-                loader: () => fetch('../gadgets.json')
-              },
-              {
-                path: "/:category",
-                element: <Gadgets></Gadgets>,
-                loader: () => fetch('../gadgets.json')
-              }
-            ]
-        },
-        {
-            path: "/statistics",
-            element: <Statistics></Statistics>,
-        },
-        {
+            element: <Gadgets></Gadgets>,
+            loader: () => fetch('../gadgets.json')
+          },
+          {
+            path: "/:category",
+            element: <Gadgets></Gadgets>,
+            loader: () => fetch('../gadgets.json')
+          }
+        ]
+      },
+      {
+        path: "/statistics",
+        element: <Statistics></Statistics>,
+      },
+      {
+        path: "/dashboard",
+        element: <Dashboard></Dashboard>,
+        children: [
+          {
             path: "/dashboard",
-            element: <Dashboard></Dashboard>,
-            children: [
-              {
-                path: "/dashboard",
-                element: <CartContainer></CartContainer>
-              },
-              {
-                path: "/dashboard/cart",
-                element: <CartContainer></CartContainer>
-              },
-              {
-                path: "/dashboard/wishlist",
-                element: <WishlistContainer></WishlistContainer>
-              }
-            ]
-        },
-        {
-          path: "/gadget/:id",
-          element: <ProductDetails></ProductDetails>,
-          loader: () => fetch('../gadgets.json')
-        }
+            element: <CartContainer></CartContainer>
+          },
+          {
+            path: "/dashboard/cart",
+            element: <CartContainer></CartContainer>
+          },
+          {
+            path: "/dashboard/wishlist",
+            element: <WishlistContainer></WishlistContainer>
+          }
+        ]
+      },
+      {
+        path: "/pc-builder",
+        element: <PCBuilder></PCBuilder>
+      },
+      {
+        path: "/gadget/:id",
+        element: <ProductDetails></ProductDetails>,
+        loader: () => fetch('../gadgets.json')
+      }
     ]
   },
 ]);

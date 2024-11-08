@@ -69,18 +69,22 @@ const NavBar = () => {
                                 <li>
                                     <NavLink to="/dashboard" className={({ isActive }) => isActive ? "text-primary" : navClassName}>Dashboard</NavLink>
                                 </li>
+                                <li>
+                                    <NavLink to="/pc-builder" className={({ isActive }) => isActive ? "text-primary" : navClassName}>PC Builder</NavLink>
+                                </li>
                             </ul>
                         </div>
                         <Link to="/" className={`sm:text-xl lg:text-2xl font-extrabold ${location.pathname === '/' || location.pathname === '/Laptops' || location.pathname === '/Phones' || location.pathname === '/Accessories' || location.pathname === '/Smart-Watches' || location.pathname === '/Smart-TVs'  ? "text-white" : "text-text1"}`}>
                             Gadget Heaven
                         </Link>
                     </div>
-                    <div className="navbar-center hidden sm:flex gap-4 text-xs sm:text-sm md:text-base">
+                    <div className="navbar-center hidden sm:flex gap-2 md:gap-4 text-xs sm:text-sm md:text-base">
                         <NavLink to="/" className={({ isActive }) => isActive || location.pathname==='/' || location.pathname==='/Laptops' || location.pathname==='/Phones' || location.pathname==='/Accessories' || location.pathname==='/Smart-Watches' || location.pathname==='/Smart-TVs' ? "text-white underline" : "text-text2"}>Home</NavLink>
                         <NavLink to="/statistics" className={({ isActive }) => isActive ? "text-primary" : navClassName}>Statistics</NavLink>
                         <NavLink to="/dashboard" className={({ isActive }) => isActive ? "text-primary" : navClassName}>Dashboard</NavLink>
+                        <NavLink to="/pc-builder" className={({ isActive }) => isActive ? "text-primary" : navClassName}>PC Builder</NavLink>
                     </div>
-                    <div className="flex justify-end items-center gap-2 sm:gap-4">
+                    <div className="flex justify-end items-center gap-2 md:gap-4">
                         <Link to="/dashboard/cart" className={"btn btn-circle border border-fullBg outline-none btn-xs sm:btn-sm xl:btn-md bg-white sm:text-xl lg:text-2xl text-text2 relative"}>
                             <AiOutlineShoppingCart />
                             <div className={`absolute -top-2 -right-2 w-min py-1 px-3 rounded-full text-red-500 text-sm bg-white/40 ${!cartBadge || cartBadge === 0 ? "hidden" : ""}`}>{cartBadge}</div>

@@ -14,7 +14,7 @@ const Dashboard = () => {
     return (
         <div>
             <div className="bg-primary pb-8">
-                <Heading title={'Dashboard'} subtitle={'Here you can see the items you have added to your Cart or as your favourite. Just click the Purchase button to complete your purchase. Happy Shopping!'}></Heading>
+                <Heading title={'Dashboard'} subtitle={'Here you can see the items you have added to your Cart or as your favourites. Just click the Purchase button from Cart to complete your purchase. Happy Shopping!'}></Heading>
                 <div className="flex flex-col sm:flex-row justify-center items-center gap-6">
                     <NavLink to="/dashboard/cart"
                             className={({isActive})=>isActive?
