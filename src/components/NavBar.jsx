@@ -2,20 +2,9 @@ import { Link, NavLink } from "react-router-dom";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { CiHeart } from "react-icons/ci";
 import { useEffect, useState } from "react";
-import { getOldCart, getOldWishlist } from "../utilities";
 
 
 const NavBar = () => {
-
-    const [cartBadge, setCartBadge] = useState(null);
-    const [wishlistBadge, setWishlistBadge] = useState(null);
-
-    useEffect(() => {
-        const cart = getOldCart();
-        setCartBadge(cart.length);
-        const wishlist = getOldWishlist();
-        setWishlistBadge(wishlist.length);
-    }, [])
 
     const navClass = () => {
         if (location.pathname === '/' || location.pathname === '/Laptops' || location.pathname === '/Phones' || location.pathname === '/Accessories' || location.pathname === '/Smart-Watches' || location.pathname === '/Smart-TVs') {
@@ -58,7 +47,7 @@ const NavBar = () => {
                             </div>
                             <ul
                                 tabIndex={0}
-                                className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+                                className="menu menu-sm dropdown-content bg-blue-600 rounded-box z-[1] mt-3 w-52 p-2 shadow"
                             >
                                 <li>
                                     <NavLink to="/" className={({ isActive }) => isActive || location.pathname==='/' || location.pathname==='/Laptops' || location.pathname==='/Phones' || location.pathname==='/Accessories' || location.pathname==='/Smart-Watches' || location.pathname==='/Smart-TVs' ? "text-white underline" : "text-text2"}>Home</NavLink>
@@ -85,13 +74,11 @@ const NavBar = () => {
                         <NavLink to="/pc-builder" className={({ isActive }) => isActive ? "text-primary" : navClassName}>PC Builder</NavLink>
                     </div>
                     <div className="flex justify-end items-center gap-2 md:gap-4">
-                        <Link to="/dashboard/cart" className={"btn btn-circle border border-fullBg outline-none btn-xs sm:btn-sm xl:btn-md bg-white sm:text-xl lg:text-2xl text-text2 relative"}>
+                        <Link to="/dashboard/cart" className={"btn btn-circle border border-fullBg outline-none btn-xs sm:btn-sm xl:btn-md bg-white sm:text-xl lg:text-2xl text-text2"}>
                             <AiOutlineShoppingCart />
-                            <div className={`absolute -top-2 -right-2 w-min py-1 px-3 rounded-full text-red-500 text-sm bg-white/40 ${!cartBadge || cartBadge === 0 ? "hidden" : ""}`}>{cartBadge}</div>
                         </Link>
-                        <Link to="/dashboard/wishlist" className={"btn btn-circle border border-fullBg outline-none btn-xs sm:btn-sm xl:btn-md bg-white sm:text-xl lg:text-2xl text-text2 relative"}>
+                        <Link to="/dashboard/wishlist" className={"btn btn-circle border border-fullBg outline-none btn-xs sm:btn-sm xl:btn-md bg-white sm:text-xl lg:text-2xl text-text2"}>
                             <CiHeart />
-                            <div className={`absolute -top-2 -right-2 w-min py-1 px-3 rounded-full text-red-500 text-sm bg-white/40 ${!wishlistBadge || wishlistBadge===0 ? "hidden": ""}`}>{wishlistBadge}</div>
                         </Link>
                     </div>
                 </div>

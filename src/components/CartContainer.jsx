@@ -8,6 +8,7 @@ const CartContainer = () => {
 
     const [cartItems, setCartItems] = useState([]);
     const [totalCost, setTotalCost] = useState(0.00);
+    const [dummyTotal, setDummyTotal] = useState(0.00);
     const navigate = useNavigate();
 
     useEffect(() => {
@@ -15,6 +16,7 @@ const CartContainer = () => {
         setCartItems(cart);
         const currentTotalCost = cart?.reduce((prev, curr) => prev + curr.price, 0);
         setTotalCost(currentTotalCost);
+        setDummyTotal(currentTotalCost);
     }, [])
 
     const handleRemoveFromCart = (index) => {
@@ -23,6 +25,7 @@ const CartContainer = () => {
         setCartItems(cart);
         const currentTotalCost = cart?.reduce((prev, curr) => prev + curr.price, 0);
         setTotalCost(currentTotalCost);
+        setDummyTotal(currentTotalCost);
     }
 
     const handleSort = () => {
@@ -36,14 +39,14 @@ const CartContainer = () => {
         document.getElementById('purchase_modal').showModal()
         localStorage.removeItem('cart');
         const cart = getOldCart();
-        setCartItems(cart);        
+        setCartItems(cart);
+        setTotalCost(0);        
     }
 
     const handleModalClose = () => {
-        setTotalCost(0);
         setTimeout(() => {
             navigate('/');
-        }, 1000);
+        }, 500);
     }
 
     return (
@@ -101,7 +104,7 @@ const CartContainer = () => {
                         <h3 className="font-bold text-lg py-4">Payment Successful!</h3>
                         <hr/>
                         <p className="py-4">Thank You for Purchasing.</p>
-                        <p className="pb-4">Total Cost: $ {totalCost}</p>
+                        <p className="pb-4">Total Cost: $ {dummyTotal}</p>
                         <div className="flex justify-center">
                             <form method="dialog">
                                 {/* if there is a button in form, it will close the modal */}
